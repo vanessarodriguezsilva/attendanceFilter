@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Filter</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Attendance Filter</h1>
+    
+    <!-- Form to choose filter type and enter search criteria -->
+    <label for="filterType">Select Filter Type:</label>
+    <select id="filterType">
+        <option value="date">By Date</option>
+        <option value="name">By Name</option>
+    </select>
+    
+    <div id="inputSection">
+        <label for="searchInput" id="inputLabel">Enter Data:</label>
+        <input type="text" id="searchInput" placeholder="e.g. 9/4" />
+    </div>
+    
+    <button id="filterBtn">Filter</button>
+    
+    <!-- Display the filtered results -->
+    <div id="result"></div>
+
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
